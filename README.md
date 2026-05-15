@@ -83,7 +83,7 @@ node index.js
 ```bash
 cd extension
 npm install
-node scripts/generate-icons.js   # Generate extension icons
+node scripts/generate-icons.cjs   # Generate extension icons
 npm run build                     # Builds popup, content script, and background
 ```
 
