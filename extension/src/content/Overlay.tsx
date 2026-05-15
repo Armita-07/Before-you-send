@@ -45,7 +45,7 @@ const VERDICT_CONFIG = {
   },
 };
 
-const AUTO_DISMISS_MS = 3000;
+const AUTO_DISMISS_MS = 10000;
 
 export const Overlay: React.FC<OverlayProps> = ({
   state,
