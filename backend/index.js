@@ -32,6 +32,11 @@ app.get("/health", (req, res) => {
   res.json({ status: "ok", timestamp: new Date().toISOString() });
 });
 
+// Root route to avoid "Cannot GET /"
+app.get("/", (req, res) => {
+  res.json({ message: "Before You Send API is running!" });
+});
+
 // Routes
 app.use("/analyze", analyzeRouter);
 
